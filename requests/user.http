@@ -1,0 +1,34 @@
+POST http://localhost:5000/v1/users HTTP/1.1
+content-type: application/json
+
+
+{
+    "id": 1,
+    "name": "carlos",
+    "email": "carlosalberto1@gmail.com"
+}
+
+
+###
+
+PUT http://localhost:5000/v1/users/1 HTTP/1.1
+content-type: application/json
+
+
+{
+    "name": "carlos alberto",
+    "email": "carlosalberto4@gmail.com"
+}
+
+
+###
+
+GET http://localhost:5000/v1/users HTTP/1.1
+
+###
+
+GET http://localhost:5000/v1/users/1 HTTP/1.1
+
+###
+
+DELETE http://localhost:5000/v1/users/7 HTTP/1.1
